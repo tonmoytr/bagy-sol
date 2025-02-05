@@ -26,6 +26,10 @@ a, p, span{
   font-family: 'chicken pie';
 }
 
+html, body{
+  overflow-x: hidden;
+}
+
 /* header design */
 
 .header {
@@ -460,6 +464,9 @@ a, p, span{
   }
   .redTxt {
     color: #f01d26;
+  }
+  .tok{
+    font-size: 3rem;
   }
   .tknTtl {
     width: 100%;
