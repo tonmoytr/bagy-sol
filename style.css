@@ -180,13 +180,13 @@ img.abt_img {
 .ban_poppy {
   width: 300px;
   height: 300px;
-  background: #488a48;
+  /* background: #488a48; */
   text-align: center;
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
   padding: 0px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-top: 50px;
 }
 /* marqee style */
