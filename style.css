@@ -2,13 +2,17 @@
 
 /* @import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"); */
 
-@font-face {
+/* @font-face {
   font-family: "chicken pie";
   src: url("./assets/fonts/CHICKEN\ Pie.ttf");
 }
 @font-face {
   font-family: "pinky show";
   src: url("./assets/fonts/Pinky\ Show.ttf");
+} */
+@font-face {
+  font-family: "good matcha";
+  src: url("./assets/fonts/Good\ Matcha.otf");
 }
 
 body {
@@ -24,13 +28,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "pinky show";
+  font-family: "good matcha";
 }
 
 a,
 p,
 span {
-  font-family: "chicken pie";
+  font-family: "good matcha";
 }
 
 html,
@@ -41,7 +45,7 @@ body {
 /* header design */
 
 .header {
-  background: #002000;
+  background: #000;
   /* background-image: linear-gradient(#e19bfa54, #D980FA); */
   background-size: cover;
   background-position: center;
@@ -141,12 +145,12 @@ img.abt_img {
 
 .social_btn a {
   text-decoration: none;
-  background-color: #24492e;
+  /* background-color: #24492e; */
   display: inline-block;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 3px solid #fff;
+  /* border: 3px solid #fff; */
   text-align: center;
   line-height: 49px;
   box-shadow: 5px 7px 13px #1111118a;
@@ -284,7 +288,7 @@ img.abt_img {
 /* about section */
 .about {
   padding: 60px 0;
-  background-color: #002000;
+  background-color: #000;
   background-image: url();
   background-size: cover;
 }
@@ -320,7 +324,7 @@ img.abt_img {
 }
 
 .token {
-  background-color: #002000;
+  background-color: #000;
   /* background-image: linear-gradient(#db8af856, #D980FA); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,7 +394,7 @@ img.abt_img {
 
 .gal_sec,
 .dis_sec {
-  background-color: #002000;
+  background-color: #000;
   padding: 0px 0 80px;
 }
 
@@ -483,12 +487,12 @@ img.abt_img {
 
   .social_btn a {
     text-decoration: none;
-    background-color: #24492e;
+    /* background-color: #24492e; */
     display: inline-block;
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    border: 3px solid #fff;
+    /* border: 3px solid #fff; */
     text-align: center;
     line-height: 36px;
     box-shadow: 5px 7px 13px #1111118a;
@@ -604,7 +608,7 @@ img.abt_img {
   }
   .sub_ttl {
     text-align: center;
-    color: #01a8fc;
+    color: #81ffab;
     -webkit-text-stroke: 1.5px #000;
     font-size: 30px;
     /* font-family: "Rubik Bubbles", serif; */
