@@ -6,6 +6,81 @@
     <title>BAGY ON SL | $BAGY</title>
     <style></style>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      .navbar-c {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #3a3a3a; */
+        padding: 25px 40px;
+        border-radius: 50px;
+        color: white;
+      }
+
+      .logo-c {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .menu-c {
+        display: flex;
+        gap: 20px;
+      }
+
+      .menu-c a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      .menu-c a:hover {
+        color: #f4a261;
+      }
+
+      .hamburger-c {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background: #444;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      .mobile-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .menu-c {
+          display: none;
+        }
+
+        .hamburger-c {
+          display: block;
+        }
+
+        .mobile-menu{
+          z-index: 1;
+        }
+
+        .mobile-menu.show {
+          display: flex;
+        }
+      }
+    </style>
     <link
       rel="shortcut icon"
       href="/assets/memes/logo.jpg"
@@ -18,7 +93,32 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background: #000">
+    <div class="container">
+      <nav class="navbar-c">
+        <div class="logo-c">
+          <img
+            style="width: 90px; border-radius: 50%"
+            src="./assets/memes/log.jpg"
+            alt=""
+          />
+        </div>
+        <div class="menu-c">
+          <a href="/">Home</a>
+          <a href="#about">About</a>
+          <a href="#tokenomics">Tokenomics</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+        <div class="hamburger-c" onclick="toggleMenu()">☰</div>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+    </div>
     <header class="header">
       <div class="banner_wrapper">
         <div class="banner_cnt" style="text-align: center">
@@ -32,7 +132,7 @@
 
           <div
             style="
-              margin: 18% 0;
+              margin: 8% 0;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -300,7 +400,7 @@
     </section>
 
     <!-- about section -->
-    <section class="about" style="padding: 80px 0">
+    <section id="about" class="about" style="padding: 80px 0">
       <div class="container">
         <div class="">
           <h2></h2>
@@ -440,47 +540,47 @@
         </div>
 
         <div class="row" style="padding-top: 76px">
-          <div class="col-md-4">
+          <div data-aos="fade-right" class="col-md-4">
             <div class="box">
               <img src="/assets/memes/meme.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div data-aos="fade-down" class="col-md-4">
             <div class="box space_top">
               <img src="/assets/memes/meme2.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div data-aos="fade-left" class="col-md-4">
             <div class="box">
               <img src="/assets/memes/meme3.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div data-aos="fade-right" class="col-md-4">
             <div class="box">
               <img src="/assets/memes/meme4.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div data-aos="fade-down" class="col-md-4">
             <div class="box space_top">
               <img src="/assets/memes/meme5.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div data-aos="fade-left" class="col-md-4">
             <div class="box">
               <img src="/assets/memes/meme7.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div data-aos="fade-right" class="col-md-4">
             <div class="box">
               <img src="/assets/memes/meme8.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div data-aos="fade-down" class="col-md-4">
             <div class="box space_top">
               <img src="/assets/memes/meme9.jpg" alt="" />
             </div>
           </div>
-          <div class="col-md-4">
+          <div data-aos="fade-left" class="col-md-4">
             <div class="box">
               <img src="/assets/memes/meme10.jpg" alt="" />
             </div>
@@ -715,5 +815,14 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("show");
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
